@@ -139,16 +139,24 @@ def magnetic_path_following(current_pos, path_points, attraction_strength=0.5, m
    - Virtual sinusoidal path on screen
    - Standard smoothing algorithms only
    - User tries to follow path manually
+   - **Results**: Mean X Error: -29.67 mm, Mean Y Error: 10.32 mm
 
 2. **Proposed Method** (`Newway.py`):
    - Same virtual path
    - Magnetic attraction enabled
    - Dynamically adjusts attraction strength based on distance
+   - **Results**: Mean X Error: -1.34 mm, Mean Y Error: 1.96 mm
 
-**Results**: 
-- ✅ **Significantly improved path-following accuracy**
-- ✅ **Reduced deviation from intended trajectory**
-- ✅ **Better user experience and control**
+### Results Comparison
+
+![Accuracy Comparison](results/Sinusoidal_Wave_Comparison.png)
+
+**Key Findings**:
+- ✅ **~22x improvement in X-axis accuracy** (29.67mm → 1.34mm)
+- ✅ **~5x improvement in Y-axis accuracy** (10.32mm → 1.96mm)
+- ✅ Significantly reduced deviation from intended trajectory
+- ✅ Better user experience and smoother control
+- ✅ Magnetic attraction effectively compensates for natural hand tremor
 
 ---
 
@@ -160,13 +168,22 @@ def magnetic_path_following(current_pos, path_points, attraction_strength=0.5, m
 - 3D visualization using PyGame + OpenGL
 - Real-time particle physics simulation
 - Hand gesture control:
-  - **Move hand**: Position laser
-  - **Press 'G'**: Grab nearest particle
-  - **Press 'R'**: Release particle
+  - **Move hand**: Position laser pointer in 3D space
+  - **Pinch gesture**: Grab nearest particle
+  - **Release pinch**: Drop/release particle
 - Target zones for particle placement
-- Scoring system and timer
+- Scoring system and 60-second timer
+- Real MEMS mirror integration for hardware control
 
-**Use Case**: Demonstrates potential medical applications for targeted drug delivery using magnetic nanoparticles.
+**Gameplay**:
+1. Move your hand to position the laser
+2. When near a particle, perform pinch gesture to grab it
+3. Move the grabbed particle to the green target zone
+4. Release pinch to drop the particle
+5. Score points when particles land in target zone
+6. Try to maximize score within 60 seconds
+
+**Use Case**: Demonstrates potential medical applications for targeted drug delivery using magnetic nanoparticles controlled by intuitive hand gestures.
 
 ---
 
@@ -235,10 +252,20 @@ python fing_tip.py
 | Metric | Value |
 |--------|-------|
 | **Mean Tracking Error** | < 4 mm |
+| **Magnetic Attraction Improvement** | 22x better (X-axis), 5x better (Y-axis) |
 | **Frame Rate** | 30 FPS |
-| **Latency** | Low (< 50ms) |
+| **System Latency** | Low (< 50ms) |
 | **Detection Confidence** | 0.7 (70%) |
 | **Gesture Recognition Accuracy** | High |
+
+### Additional Results
+
+The `results/` folder contains comprehensive experimental data:
+- **Sinusoidal_Wave_Comparison.png**: Main accuracy comparison (with vs without magnetic attraction)
+- **Physical_NU_Comparison.png**: Physical sinusoidal path tracking results
+- **Total_System_Delay.png**: End-to-end latency analysis
+- **More_Comparison_Results.jpg**: Extended experimental validation
+- **original_trajectory_comparison_with_magnetic_path_following.png**: Trajectory tracking analysis
 
 ---
 
@@ -352,6 +379,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Nazarbayev University for providing research facilities and support
 - Dr. Ton Duc Do for invaluable guidance and mentorship throughout this research
+- Centre of Excellence in Medical Robotics and Research at Nazarbayev University
+- National Center for Children's Rehabilitation (NCCR), Astana for collaboration opportunities
+- MTI Device team for MEMS mirror SDK support
 - MediaPipe and DepthAI teams for excellent open-source libraries
 
 ---
@@ -360,7 +390,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 1. MediaPipe Hands: https://google.github.io/mediapipe/solutions/hands.html
 2. DepthAI: https://docs.luxonis.com/
-3. MEMS Mirror Technology: [Relevant papers] or www.mirrorcletech.com
+3. MEMS Mirror Technology (MirrorcleTech): https://www.mirrorcletech.com
 4. Gesture Recognition in HCI: [Relevant papers]
 
 ---
