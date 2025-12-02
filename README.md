@@ -149,7 +149,7 @@ def magnetic_path_following(current_pos, path_points, attraction_strength=0.5, m
 
 ### Results Comparison
 
-![Accuracy Comparison](results/Sinusoidal_Wave_Comparison.png)
+![Accuracy Comparison](results/More_Comparison_Resuts.jpg)
 
 **Key Findings**:
 - ✅ **~22x improvement in X-axis accuracy** (29.67mm → 1.34mm)
@@ -342,10 +342,6 @@ Data is logged to CSV files for analysis:
 
 ---
 
-## 📝 Publications
-
-[If applicable, add any papers or conference presentations]
-
 ---
 
 ## 🤝 Contributing
@@ -379,8 +375,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Nazarbayev University for providing research facilities and support
 - Dr. Ton Duc Do for invaluable guidance and mentorship throughout this research
-- Centre of Excellence in Medical Robotics and Research at Nazarbayev University
-- National Center for Children's Rehabilitation (NCCR), Astana for collaboration opportunities
 - MTI Device team for MEMS mirror SDK support
 - MediaPipe and DepthAI teams for excellent open-source libraries
 
