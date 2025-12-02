@@ -1,0 +1,23 @@
+# MEMS Gesture Recognition - Python Dependencies
+# Install with: pip install -r requirements.txt --break-system-packages
+
+# Core Computer Vision
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+
+# DepthAI for OAK-D Camera
+depthai>=2.20.0
+
+# Scientific Computing
+numpy>=1.24.0
+
+# For Game Demo (nano.py)
+pygame>=2.5.0
+PyOpenGL>=3.1.6
+PyOpenGL-accelerate>=3.1.6
+
+# Data Processing
+pandas>=2.0.0
+
+# Optional: For advanced filtering
+scipy>=1.10.0
