@@ -348,7 +348,7 @@ Data is logged to CSV files for analysis:
 
 This is a completed thesis project. The code is provided for educational and research purposes.
 
-If you find this work useful, please cite:
+If you find this work useful, cite:
 ```
 I. Hayat, "Advanced Gesture Recognition Using MEMS Mirrors for Precision Control," M.S. thesis, Nazarbayev University, Astana, Kazakhstan, 2025.
 ```
