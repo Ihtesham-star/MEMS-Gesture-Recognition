@@ -6,7 +6,7 @@
 
 ## 📋 Abstract
 
-This thesis presents an advanced gesture recognition system utilizing Micro-Electro-Mechanical Systems (MEMS) mirrors for precise control applications. The proposed system employs an OAK-D Pro camera integrated with computer vision techniques, real-time image processing algorithms, and MEMS scanning mirrors to accurately detect and track hand gestures.
+This thesis presents an advanced gesture recognition system utilizing Micro-Electro-Mechanical Systems (MEMS) mirrors for precise control applications. The proposed system employs an OAK-D Pro camera used as a high-resolution RGB source (1080p); hand tracking performed via MediaPipe running on the 2D color stream, real-time image processing algorithms, and MEMS scanning mirrors to accurately detect and track hand gestures.
 
 Through a wide-ranging methodology incorporating gesture definition, data collection, algorithm implementation, and thorough testing, we achieve a high-reliability and responsive system. Experimental results demonstrate that our approach achieves a low mean tracking error of **less than 4 mm** with robust tracking and low latency. The accuracy of the system is evaluated systematically and outperforms available solutions.
 
@@ -350,8 +350,7 @@ This is a completed thesis project. The code is provided for educational and res
 
 If you find this work useful, please cite:
 ```
-Ihtesham, "Advanced Gesture Recognition Using MEMS Mirrors for Precision Control,"
-Master's Thesis, Nazarbayev University, 2025
+I. Hayat, "Advanced Gesture Recognition Using MEMS Mirrors for Precision Control," M.S. thesis, Nazarbayev University, Astana, Kazakhstan, 2025.
 ```
 
 ---
